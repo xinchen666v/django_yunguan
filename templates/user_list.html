@@ -1,0 +1,33 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嘿，等我找到你</title>
+</head>
+<body>
+    <h1>嘿，等我找到你</h1>
+    <img src="{% static 'img/juan_yun.jpeg' %}" alt="卷云">
+{#    <div>{{ n1 }}</div>#}
+{#    <div>{{ r1.0 }}</div>#}
+{#    <div>{{ r1.1 }}</div>#}
+{#    <div>{{ r1.2 }}</div>#}
+<div>
+    {% for item in r1 %}
+        <span>{{ item }}</span>
+    {% endfor %}
+</div>
+<ul>
+    {% for k,v in u1.items %}
+        <li>{{ k }}={{ v }}</li>
+    {% endfor %}
+</ul>
+{% if n1 == "卷云" %}
+    <h1>识别完成</h1>
+{% else %}    
+    <h1>识别未完成</h1>
+{% endif %}
+
+</body>
+</html>
