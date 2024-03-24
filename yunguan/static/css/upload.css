@@ -1,0 +1,43 @@
+body {
+    font-family: 'Orbitron', sans-serif; /* 更科幻的字体 */
+    background-color: #0a0a0a; /* 深色背景 */
+    color: #19f9d8; /* 霓虹绿色文字 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(315deg, #0a0a0a 0%, #223344 74%); /* 渐变背景 */
+}
+
+form {
+    background: #111; /* 深色表单背景 */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 255, 255, 0.6); /* 霓虹蓝色阴影 */
+    border: 1px solid #19f9d8; /* 霓虹绿色边框 */
+}
+
+input[type='file'] {
+    border: 1px solid #19f9d8; /* 霓虹绿色边框 */
+    padding: 10px;
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    background: #222; /* 深色输入框背景 */
+    color: #fff; /* 白色文字 */
+}
+
+input[type='submit'] {
+    background: #ff7555; /* 霓虹粉色按钮 */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type='submit']:hover {
+    background: #ff7597; /* 霓虹紫色按钮悬停效果 */
+}

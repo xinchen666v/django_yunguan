@@ -1,0 +1,17 @@
+<!-- result.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>识别结果</title>
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+
+</head>
+<body>
+{% for result in results %}
+    <div class="result-name">分类：{{ result.name }}</div>
+    <div class="result-score">概率：{{ result.score }}</div>
+{% endfor %}
+</body>
+</html>

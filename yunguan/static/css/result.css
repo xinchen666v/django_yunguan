@@ -1,0 +1,72 @@
+body {
+    background-color: #0a0a0a; /* 深色背景 */
+    color: #fff; /* 白色文本 */
+    font-family: 'Orbitron', sans-serif; /* 推荐使用未来主义字体 */
+    margin: 0;
+    padding: 20px;
+}
+
+.result-container {
+    background-color: #212121; /* 暗色卡片背景 */
+    border: 1px solid #ff7597; /* 霓虹粉红边框 */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+}
+
+.result-name, .result-score {
+    background-color: #111; /* 更深色的背景 */
+    border-left: 3px solid #ff7597; /* 霓虹粉红左边框 */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.result-name {
+    color: #19f9d8; /* 霓虹蓝绿色 */
+    font-size: 1.5em;
+}
+
+.result-score {
+    color: #ff7597; /* 霓虹粉红色 */
+    font-size: 1.2em;
+}
+
+/* 添加一些赛博朋克风格的装饰效果 */
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.result-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(255, 0, 150, 0.1), rgba(0, 255, 200, 0.1) 50%, rgba(255, 0, 150, 0.1));
+    z-index: 1;
+    animation: flicker 3s infinite;
+}
+
+/* 确保文本在装饰效果之上 */
+.result-name, .result-score {
+    position: relative;
+    z-index: 2;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .result-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .result-name, .result-score {
+        margin: 5px 0;
+        padding: 5px;
+    }
+}
