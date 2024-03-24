@@ -54,3 +54,7 @@ def yun_guan(request):
         return render(request, 'result.html', {'results': result})
 
     return render(request, 'upload.html')
+
+
+def login(request):
+    return render(request, 'login.html')

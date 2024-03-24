@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YunGuan|云观</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<!-- 整体布局 -->
+<div class="container right-panel-active">
+    <!-- 注册框 -->
+    <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+            <h2 class="form__title">注册账号</h2>
+            <input type="text" placeholder="用户名" class="input">
+            <input type="email" placeholder="邮箱地址" class="input">
+            <input type="password" placeholder="密码" class="input">
+            <button class="btn">点击注册</button>
+        </form>
+    </div>
+
+    <!-- 登录框 -->
+    <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+            <h2 class="form__title">欢迎登录</h2>
+            <input type="text" placeholder="用户名" class="input">
+            <input type="password" placeholder="密码" class="input">
+            <a href="http://mail.qq.com" class="link">忘记密码？</a>
+            <button class="btn">登录</button>
+        </form>
+    </div>
+
+    <div class="container__overlay">
+        <div class="overlay">
+            <div class="overlay__panel overlay--left">
+                <button class="btn" id="signIn">已有账号，直接登录</button>
+            </div>
+
+            <div class="overlay__panel overlay--right">
+                <button class="btn" id="signUp">没有账号，点击注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="{% static 'js/login.js' %}"></script>
+</html>

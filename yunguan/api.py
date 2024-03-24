@@ -20,7 +20,7 @@ def yun_guan_api(base64_str):
 
     # 可选的请求参数
     # top_num: 返回的分类数量，不声明的话默认为 6 个
-    PARAMS = {"top_num": 2}
+    PARAMS = {"top_num": 6}
 
     # 服务详情 中的 接口地址
     MODEL_API_URL = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/classification/yunguan"
