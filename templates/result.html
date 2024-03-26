@@ -9,6 +9,9 @@
 
 </head>
 <body>
+<!-- 在这里添加图片展示 -->
+<img src="data:image/jpeg;base64,{{ img_base64 }}" alt="识别的云朵" style="width:100%; max-width:600px; height:auto;">
+
 {% for result in results %}
     <div class="result-name">分类：{{ result.name }}</div>
     <div class="result-score">概率：{{ result.score }}</div>

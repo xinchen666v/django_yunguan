@@ -55,7 +55,7 @@ def yun_guan(request):
 
         # 调用API并获取结果
         result = yun_guan_api(base64_str)
-        return render(request, 'result.html', {'results': result})
+        return render(request, 'result.html', {'results': result,'img_base64': base64_str})
 
     return render(request, 'upload.html')
 
@@ -95,3 +95,7 @@ def register_view(request):
             return redirect('/login/')  # 注册成功后重定向到登录页面
     else:
         return render(request, 'login.html')
+
+
+def home(request):
+    return render(request, 'home.html')

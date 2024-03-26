@@ -1,10 +1,38 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云朵爱好者社区</title><link rel="stylesheet" href="{% static 'css/home.css' %}">
+<script src="{% static 'js/home.js' %}"></script>
 </head>
 <body>
+
+<div class="navbar">
+  <a href="/home/">主页</a>
+  <a href="/login/">登录</a>
+  <a href="/login/">注册</a>
+  <a href="/yun_guan/">云朵识别</a>
+</div>
+
+<!-- 在您的HTML文件中，添加一个包含图片的div容器 -->
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="{% static 'img/juan_yun.jpeg' %}" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <img src="{% static 'img/yun_ai.jpeg' %}" style="width:100%">
+  </div>
+  <div class="mySlides">
+    <img src="{% static 'img/yun_test.jpg' %}" style="width:100%">
+  </div>
+</div>
+
+<div class="main">
+  <h1>观云识天</h1>
+  <p>欢迎来到云朵爱好者社区，在这里我们分享和科普关于天文的知识。</p>
+</div>
 
 </body>
 </html>

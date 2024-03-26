@@ -29,5 +29,6 @@ urlpatterns = [
     path('yun_guan/', views.yun_guan),
     path('login/', views.login),
     path('login_view/', views.login_view, name='login'),
-    path('register/', views.register_view, name='register')
+    path('register/', views.register_view, name='register'),
+    path('home/', views.home)
 ]
