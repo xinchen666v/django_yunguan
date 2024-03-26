@@ -27,5 +27,7 @@ urlpatterns = [
     path('index/', views.index),
     path('user_list/', views.user_list),
     path('yun_guan/', views.yun_guan),
-    path('login/', views.login)
+    path('login/', views.login),
+    path('login_view/', views.login_view, name='login'),
+    path('register/', views.register_view, name='register')
 ]

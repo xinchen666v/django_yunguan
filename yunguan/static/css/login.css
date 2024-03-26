@@ -190,6 +190,12 @@ body{
     width: 100%;
 }
 
+.error-message {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
 @keyframes show {
     0%,
     49.99% {

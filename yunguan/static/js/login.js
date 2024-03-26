@@ -12,5 +12,11 @@ signUpBtn.addEventListener("click", () => {
     container.classList.add("right-panel-active");
 });
 
-fistForm.addEventListener("submit", (e) => e.preventDefault());
-secondForm.addEventListener("submit", (e) => e.preventDefault());
+// fistForm.addEventListener("submit", (e) => e.preventDefault());
+// secondForm.addEventListener("submit", (e) => e.preventDefault());
+
+// 获取错误消息元素
+const errorMessage = document.getElementById('error-message');
+
+// 3秒后隐藏错误消息
+setTimeout(() => {errorMessage.style.visibility = 'hidden';}, 3000);
